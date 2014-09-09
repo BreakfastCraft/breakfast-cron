@@ -1,0 +1,11 @@
+{
+	"servername": {
+		"name": "SERVERNAME",
+		"address": "111.111.111.111",
+		"port": 12345,
+		"path": "/put/server/dir/here",
+		"password": "rconpassword"
+	}
+}
+
+

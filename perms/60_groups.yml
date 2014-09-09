@@ -1,0 +1,311 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+# 60_groups.yml
+groups:
+  Custard:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&e[Custard] &7'
+      build: true
+      suffix: ''
+  GPancake:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&5[Gourmet &9Pancake] &7'
+      build: true
+      suffix: ''
+  Admin:
+    default: false
+    permissions: []
+    inheritance:
+    - moderator
+    - g:groupmanager_admin
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:towny_admin
+    - g:vanish_admin
+    info:
+      prefix: '&c[Admin] &7'
+      build: true
+      suffix: ''
+  Supporter:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:towny_builder
+    - g:essentials_supporter
+    - g:essentials_builder
+    info:
+      prefix: '&b[VIP] &7'
+      build: true
+      suffix: ''
+  Epicure:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&b[Epicure] &7'
+      build: true
+      suffix: ''
+  GEpicure:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&5[Gourmet &bEpicure] &7'
+      build: true
+      suffix: ''
+  GSausage:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&5[Gourmet &3Sausage] &7'
+      build: true
+      suffix: ''
+  GPudding:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&5[Gourmet &bPudding] &7'
+      build: true
+      suffix: ''
+  GPopover:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&5[Gourmet &aPopover] &7'
+      build: true
+      suffix: ''
+  Builder:
+    default: false
+    permissions:
+    - essentials.tpa
+    inheritance:
+    - default
+    - g:essentials_builder
+    - g:towny_builder
+    info:
+      prefix: ''
+      build: true
+      suffix: ''
+  Biscuit:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&6[Biscuit] &7'
+      build: true
+      suffix: ''
+  GOatmeal:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&5[Gourmet Oatmeal] &7'
+      build: true
+      suffix: ''
+  Default:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    - am2.commands.ConfigureAMUICommand
+    - autorank.check.user
+    - essentials.ping
+    - tppitweaks.command.CommandTPPI
+    - essentials.kit.dtools
+    - essentials.kits.dtools
+    - essentials.tp
+    - essentials.weather
+    - essentials.workbench
+    - essentials.time.set
+    - essentials.repair
+    - essentials.repair.all
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    - granola
+    info:
+      prefix: '&d[Newbie] &7'
+      build: true
+      suffix: ''
+  Owner:
+    default: false
+    permissions:
+    - -vanish.*
+    - '*'
+    inheritance:
+    - admin
+    info:
+      prefix: '&c[Owner] &7'
+      build: true
+      suffix: ''
+  Pudding:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&b[Pudding] &7'
+      build: true
+      suffix: ''
+  GCustard:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&5[Gourmet &eCustard] &7'
+      build: true
+      suffix: ''
+  Pancake:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&9[Pancake] &7'
+      build: true
+      suffix: ''
+  Popover:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&a[Popover] &7'
+      build: true
+      suffix: ''
+  Cook:
+    default: false
+    permissions: []
+    inheritance:
+    - moderator
+    info:
+      prefix: '&c[Cook] &7'
+      build: true
+      suffix: ''
+  Granola:
+    default: true
+    permissions:
+    - -bukkit.command.kill
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    - default
+    info:
+      prefix: '&d[Granola] &7'
+      build: true
+      suffix: ''
+  Chef:
+    default: false
+    permissions: []
+    inheritance:
+    - admin
+    info:
+      prefix: '&c[Chef] &7'
+      build: true
+      suffix: ''
+  Ironchef:
+    default: false
+    permissions: []
+    inheritance:
+    - owner
+    info:
+      prefix: '&c[Iron Chef] &7'
+      build: true
+      suffix: ''
+  Oatmeal:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&5[Oatmeal] &7'
+      build: true
+      suffix: ''
+  Veteran:
+    default: false
+    permissions: []
+    inheritance:
+    - g:essentials_builder
+    - default
+    info:
+      prefix: '&e[Vet] &7'
+      build: true
+      suffix: ''
+  Sausage:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    info:
+      prefix: '&3[Sausage] &7'
+      build: true
+      suffix: ''
+  Moderator:
+    default: false
+    permissions: []
+    inheritance:
+    - builder
+    - g:groupmanager_moderator
+    - g:bukkit_moderator
+    - g:essentials_moderator
+    - g:towny_moderator
+    - g:vanish_moderator
+    - g:coreprotect_moderator
+    info:
+      prefix: '&a[Mod] &7'
+      build: true
+      suffix: ''
+  GBiscuit:
+    default: false
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    info:
+      prefix: '&5[Gourmet &6Biscuit] &7'
+      build: true
+      suffix: ''
