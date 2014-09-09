@@ -1,6 +1,6 @@
-# BreakfastApplications
+# breakfast-cron
 ## Description
-A WordPress plugin for handling Minecraft server whitelist applications, checks the players bans using the Fishban API, and automatically adds players to the whitelist via xPaw's PHP Source Query RCON protocol if the application is approved by an administrator.
+Cron job designed to work with breakfast-donate. Runs RCON commands based on the information in messages.json
 
 ## Attributions
 * <a href="https://github.com/katzgrau/KLogger" target="_blank">KLogger</a>
